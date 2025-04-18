@@ -11,6 +11,7 @@ let emojiDictionary={
     "👍": "Thumbs Up",
     "🎉": "Celebration"
  }
+ 
  for (let emoji in emojiDictionary) {
     let span = document.createElement("span");
     span.textContent = emoji;
