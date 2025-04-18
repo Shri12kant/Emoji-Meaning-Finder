@@ -24,7 +24,7 @@ width: 50%;
 height: 50vh;
 }
 .input-boxes{
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -67,7 +67,7 @@ border-radius: 8px;
         color: green;
     }
 }
-    
+
 /* animation part */
 .container {
     animation: fadeIn 2s ease-in-out;
@@ -99,3 +99,4 @@ border-radius: 8px;
         100% { transform: scale(1); }
       }
     
+  
