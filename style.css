@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100%;
+
+}
+body{
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+.container{
+display: flex;
+align-items: center;
+background-color: white;
+flex-direction: column;
+width: 50%;
+height: 50vh;
+}
+.input-boxes{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+.container h1{
+    color:brown;
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal; 
+}
+.input-boxes input{
+width: 90%;
+height: 10vh;
+border-radius: 10px;
+outline: none;
+
+}
+/* for responsive  */
+@media only screen and (max-width: 768px) {
+    body{
+        background-color: rgb(226, 43, 55); /* red */
+    }
+    .container{
+        width: 90%;
+        height:auto;
+        padding: 20px;
+    }
+    .input-boxes input{
+        height: 8vh;
+        width: 100%;
+
+    }
+    .container h1{
+        color: green;
+    }
+}
+    
+/* animation part */
+.container {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .input-boxes{
+    animation: slideIn 1s ease-in-out;
+  }
+    @keyframes slideIn {
+        from { transform: translateY(50px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+    .input-boxes input:focus {
+        transform: scale(1.05);
+        border: 2px solid rgb(9, 148, 51);
+        transition: all 0.3s ease;
+      }
+      h1 {
+        animation: pulse 2s infinite;
+      }
+      
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+      }
+    
